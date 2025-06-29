@@ -1,7 +1,7 @@
 import os
 from flask import Flask
-from .config import config_by_name
-from .extensions import db, migrate, jwt, cors
+from config import config_by_name
+from extensions import db, migrate, jwt, cors
 
 # Add these imports for logging
 import logging
