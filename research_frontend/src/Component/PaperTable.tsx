@@ -16,7 +16,7 @@ export default function PaperTable({ papers, toggleAllSelection, toggleSelection
   return (
     <TableContainer component={Paper} sx={{ maxHeight: 'calc(100vh - 300px)', overflow: 'auto' }}>
       <Table stickyHeader>
-        <TableHead>
+        {/* <TableHead>
           <TableRow>
             <TableCell padding="checkbox" sx={{ width: '48px' }}>
               <Checkbox
@@ -36,7 +36,7 @@ export default function PaperTable({ papers, toggleAllSelection, toggleSelection
             <TableCell>Summary</TableCell>
             <TableCell align="center" sx={{ width: '120px' }}>Actions</TableCell>
           </TableRow>
-        </TableHead>
+        </TableHead> */}
         <TableBody>
           {papers?.map((paper, index) => (
             <PaperRow 
