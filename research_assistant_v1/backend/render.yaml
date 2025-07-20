@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: research-assistant-backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    region: oregon
+    buildCommand: ""
+    startCommand: python run.py
+    envVars:
+      - key: FLASK_CONFIG
+        value: prod
+      - key: PORT
+        value: 5000
+      - key: SECRET_KEY
+        generateValue: true
+      - key: JWT_SECRET_KEY
+        generateValue: true
+    # Add your other environment variables here
+    # - key: QDRANT_URL
+    #   value: your-qdrant-url
+    # - key: QDRANT_API_KEY
+    #   value: your-qdrant-api-key

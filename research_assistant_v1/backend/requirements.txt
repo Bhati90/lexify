@@ -1,4 +1,3 @@
-
 Flask
 Flask-SQLAlchemy
 Flask-Migrate
@@ -13,4 +12,6 @@ litellm
 qdrant-client
 PyMuPDF         
 ftfy
-langchain      
+langchain
+tiktoken>=0.5.2,<0.6.0
+openai==1.23.0
